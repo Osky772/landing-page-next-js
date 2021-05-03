@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Wrapper from '../components/wrapper';
 
 export default function Home() {
   return (
-    <div>
+    <Wrapper>
       <Head>
         <title>Muse.ic - your music</title>
         <meta name="description" content="Muse.ic - listen to music" />
@@ -15,6 +16,6 @@ export default function Home() {
           Muse.ic
         </h1>
       </main>
-    </div>
+    </Wrapper>
   )
 }
