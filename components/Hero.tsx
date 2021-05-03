@@ -35,11 +35,11 @@ const HeroImageWrapper = styled.div`
     flex: 60%;
 `
 const CirceImageWrapper = styled.div`
-    position: fixed;
+    position: absolute;
     top: -50px;
-    right: -150px;
-    width: 1000px;
-    height: 1000px;
+    right: -100px;
+    width: 950px;
+    height: 950px;
     z-index: -1;
 `
 
