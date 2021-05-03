@@ -23,7 +23,8 @@ const GlobalStyle = createGlobalStyle`
 const theme = {
   colors: {
     primary: '#5956E9',
-    secondary: '#999FAE'
+    secondary: '#999FAE',
+    darkText: '#292930'
   },
   fontSizes: {
     links: '16px',
