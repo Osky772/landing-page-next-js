@@ -1,21 +1,30 @@
 import React from 'react'
 import styled from 'styled-components';
 
-const Button = styled.button`
+const Button = styled.button.attrs(props => ({
+    background: props.colored ? props.theme.colors.primary : '#ffffff',
+    color: props.colored ? '#ffffff' : props.theme.colors.primary
+}))`
     width: 180px;
     height: 72px;
     background: #FFFFFF;
     border-radius: 20px;
-    color: ${props => props.theme.colors.primary};
+    color: ${props => props.color};
+    background: ${props => props.background};
     border: none;
     font-size: ${props => props.theme.fontSizes.links};
     cursor: pointer;
 `
 
-function CTAButton() {
+type CTAButtonT = {
+    colored?: boolean;
+    children: string;
+}
+
+function CTAButton({ colored, children }: CTAButtonT) {
     return (
-        <Button>
-            Get Started
+        <Button colored={colored}>
+            { children }
         </Button>
     )
 }

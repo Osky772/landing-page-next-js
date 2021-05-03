@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Image from 'next/image'
 
-import StyledMenuItem from './MenuItem'
+import Link from './Link'
 import CTAButton from './CTAButton'
 
 const HeaderContainer = styled.header`
@@ -45,24 +45,26 @@ function Header() {
 
                 <nav>
                     <HeaderMenu>
-                        <StyledMenuItem href="#">Features</StyledMenuItem>
-                        <StyledMenuItem href="#">Pricing</StyledMenuItem>
-                        <StyledMenuItem href="#">Library</StyledMenuItem>
-                        <StyledMenuItem href="#">
+                        <Link href="#">Features</Link>
+                        <Link href="#">Pricing</Link>
+                        <Link href="#">Library</Link>
+                        <Link href="#">
                             Explore
                             <Image
                                 src="/arrow-stroke.svg"
                                 width="24"
                                 height="8"
                             />
-                        </StyledMenuItem>
+                        </Link>
                     </HeaderMenu>
                 </nav>
 
             </LeftSide>
 
             <RightSide>
-                <CTAButton />
+                <CTAButton>
+                    Get Started
+                </CTAButton>
             </RightSide>
 
         </HeaderContainer>

@@ -23,12 +23,16 @@ const GlobalStyle = createGlobalStyle`
 const theme = {
   colors: {
     primary: '#5956E9',
-    links: {
-      primary: '#999FAE'
-    }
+    secondary: '#999FAE'
   },
   fontSizes: {
-    links: '16px'
+    links: '16px',
+    h1: '96px',
+    description: '18px'
+  },
+  fonts: {
+    primary: ["'DM Sans', sans-serif"],
+    secondary: ["'Poppins', sans-serif"]
   },
   sizes: {
     wrapper: '1040px',
