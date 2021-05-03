@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Image from 'next/image'
 
+import MainContainer from './Container'
 import Logo from './Logo'
 import Link from './Link'
 import CTAButton from './CTAButton'
@@ -25,37 +26,33 @@ const HeaderMenu = styled.ul`
 
 function Header() {
     return (
-        <HeaderContainer>
-
-            <LeftSide>
-
-                <Logo />
-
-                <nav>
-                    <HeaderMenu>
-                        <Link href="#">Features</Link>
-                        <Link href="#">Pricing</Link>
-                        <Link href="#">Library</Link>
-                        <Link href="#">
-                            Explore
-                            <Image
-                                src="/arrow-stroke.svg"
-                                width="24"
-                                height="8"
-                            />
-                        </Link>
-                    </HeaderMenu>
-                </nav>
-
-            </LeftSide>
-
-            <RightSide>
-                <CTAButton>
-                    Get Started
-                </CTAButton>
-            </RightSide>
-
-        </HeaderContainer>
+        <MainContainer>
+            <HeaderContainer>
+                <LeftSide>
+                    <Logo />
+                    <nav>
+                        <HeaderMenu>
+                            <Link href="#">Features</Link>
+                            <Link href="#">Pricing</Link>
+                            <Link href="#">Library</Link>
+                            <Link href="#">
+                                Explore
+                                <Image
+                                    src="/arrow-stroke.svg"
+                                    width="24"
+                                    height="8"
+                                />
+                            </Link>
+                        </HeaderMenu>
+                    </nav>
+                </LeftSide>
+                <RightSide>
+                    <CTAButton>
+                        Get Started
+                    </CTAButton>
+                </RightSide>
+            </HeaderContainer>
+        </MainContainer>
     )
 }
 

@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Wrapper from '../components/Wrapper';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer'
@@ -13,13 +12,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Wrapper>
-        <Header />
-        <main>
+      <Header />
+      <main>
           <Hero />
         </main>
-        <Footer />
-      </Wrapper>
+      <Footer />
     </>
   )
 }

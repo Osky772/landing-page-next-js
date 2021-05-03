@@ -24,7 +24,8 @@ const theme = {
   colors: {
     primary: '#5956E9',
     secondary: '#999FAE',
-    darkText: '#292930'
+    darkText: '#292930',
+    darkBackground: '#27272E'
   },
   fontSizes: {
     links: '16px',

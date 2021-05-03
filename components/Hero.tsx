@@ -1,14 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import CTAButton from './CTAButton'
-import Link from './Link'
 import Image from 'next/image'
 
-const HeroWrapper = styled.div`
+import MainContainer from './Container'
+import CTAButton from './CTAButton'
+import Link from './Link'
+
+const HeroContainer = styled.div`
     display: flex;
     margin: 50px 0;
 `
-const HeroTextWrapper = styled.div`
+const HeroTextContainer = styled.div`
     display: flex;
     flex: 40%;
     flex-wrap: wrap;
@@ -45,43 +47,44 @@ const CirceImageWrapper = styled.div`
 
 function Hero() {
     return (
-        <HeroWrapper>
-            <HeroTextWrapper>
-                <Title>
-                    Listen Like Never Before<TitleDot>.</TitleDot>
-                </Title>
-                <Description>
-                    We offer music in 100x better quality than our competitors. Say good bye to FLAC 👋
-                </Description>
-                <CTAButton colored>
-                    Get Started
-                </CTAButton>
-                <Link href="#">
+        <MainContainer>
+            <HeroContainer>
+                <HeroTextContainer>
+                    <Title>
+                        Listen Like Never Before<TitleDot>.</TitleDot>
+                    </Title>
+                    <Description>
+                        We offer music in 100x better quality than our competitors. Say good bye to FLAC 👋
+                    </Description>
+                    <CTAButton colored>
+                        Get Started
+                    </CTAButton>
+                    <Link href="#">
+                        <Image
+                            src="/see-in-action.svg"
+                            height="12"
+                            width="40"
+                        />
+                            See in action
+                    </Link>
+                </HeroTextContainer>
+
+                <HeroImageWrapper>
                     <Image
-                        src="/see-in-action.svg"
-                        height="12"
-                        width="40"
-                    />
-                        See in action
-                </Link>
-            </HeroTextWrapper>
+                        src="/hero.png"
+                        layout="fill"
+                        objectFit="contain"
+                        />
+                </HeroImageWrapper>
 
-            <HeroImageWrapper>
-                <Image
-                    src="/hero.png"
-                    layout="fill"
-                    objectFit="contain"
+                <CirceImageWrapper>
+                    <Image
+                        src="/circle.svg"
+                        layout="fill"
                     />
-            </HeroImageWrapper>
-
-            <CirceImageWrapper>
-                <Image
-                    src="/circle.svg"
-                    layout="fill"
-                    // objectFit="contain"
-                />
-            </CirceImageWrapper>
-        </HeroWrapper>
+                </CirceImageWrapper>
+            </HeroContainer>
+        </MainContainer>
     )
 }
 
