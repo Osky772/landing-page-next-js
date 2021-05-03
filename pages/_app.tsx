@@ -22,8 +22,18 @@ const GlobalStyle = createGlobalStyle`
 
 const theme = {
   colors: {
-    primary: '#0070f3',
+    primary: '#5956E9',
+    links: {
+      primary: '#999FAE'
+    }
   },
+  fontSizes: {
+    links: '16px'
+  },
+  sizes: {
+    wrapper: '1040px',
+    header: '1280px'
+  }
 }
 
 function MyApp({ Component, pageProps }: AppProps) {
