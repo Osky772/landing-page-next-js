@@ -31,7 +31,8 @@ const theme = {
   fontSizes: {
     links: '16px',
     h1: '96px',
-    description: '18px'
+    description: '18px',
+    albumTitle: '24px'
   },
   fonts: {
     primary: ["'DM Sans', sans-serif"],

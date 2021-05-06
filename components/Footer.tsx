@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Image from 'next/image'
 
 import MainContainer from './Container'
 import Logo from './Logo'
@@ -10,6 +11,7 @@ const FooterContainer = styled.footer`
     align-items: flex-start;
     jusitfy-items: spece-between;
     flex: 0 0 100%;
+    margin: 80px 0 60px 0;
 `
 export const FooterLinksContainer = styled.div`
     dispaly: flex;

@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import NextLink from 'next/link'
 
-import { FooterLinksContainer } from './Footer';
+import { CaruselItemContainer } from './Albums'
+import { FooterLinksContainer } from './Footer'
 
 const MenuLink = styled.a.attrs(props => ({
     color: props.dark ? props.theme.colors.darkText : props.theme.colors.secondary
@@ -13,6 +14,11 @@ const MenuLink = styled.a.attrs(props => ({
     cursor: pointer;
     display: flex;
     align-items: center;
+
+    ${CaruselItemContainer} & {
+        font-size: 16px;
+        color: ${props => props.theme.colors.primary};
+    }
 
     ${FooterLinksContainer} &:first-child {
         margin-bottom: 40px;

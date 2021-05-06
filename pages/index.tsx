@@ -35,7 +35,7 @@ const getAlbums = async (): Promise<AlbumsResult | null> => {
   let result: AlbumsResult | null = null;
 
   try {
-    const res = await fetch('https://itunes.apple.com/search?term=arctic+monkeys&entity=album&attribute=albumTerm&limit=7')
+    const res = await fetch('https://itunes.apple.com/search?term=arctic+monkeys&entity=album&attribute=allArtistTerm&limit=7')
     result = await res.json()
   } catch (e) {
     console.error(e)
